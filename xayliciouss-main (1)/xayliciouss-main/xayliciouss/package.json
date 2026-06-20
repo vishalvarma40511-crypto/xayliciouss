@@ -1,0 +1,24 @@
+{
+  "name": "xayliciouss-bakery-customer-dashboard-prototype",
+  "version": "1.0.0",
+  "description": "Premium bakery prototype with customer dashboard, customer service, JSON file database, and Gemini-ready AI chatbot.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "ai-chatbot",
+    "bakery",
+    "css",
+    "customer-dashboard",
+    "customer-service",
+    "gemini",
+    "html",
+    "javascript",
+    "json-database",
+    "premium-ui"
+  ],
+  "author": "Xayliciouss Team",
+  "license": "MIT"
+}

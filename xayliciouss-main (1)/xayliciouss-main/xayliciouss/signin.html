@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sign in to your Xayliciouss premium bakery account to save your details and order faster." />
+  <title>Sign In | Xayliciouss Premium Bakery</title>
+  <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="index.html#home" class="logo" aria-label="Xayliciouss home">Xayliciouss</a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="index.html#gallery">Gallery</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="customer-service.html">Customer Service</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a class="nav-signin-btn active" id="navSignInBtn" href="signin.html">Sign In</a>
+        <button class="cart-btn" id="cartOpenBtn" type="button" aria-label="Open shopping cart">
+          <span aria-hidden="true">🛒</span>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="hamburger" id="hamburgerBtn" type="button" aria-label="Open mobile menu" aria-controls="navLinks" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="section auth-section reveal-section" aria-labelledby="authTitle">
+      <div class="auth-intro">
+        <p class="eyebrow">Xayliciouss Account</p>
+        <h1 id="authTitle">Welcome back to your sweet corner</h1>
+        <p>
+          Sign in to open your personal Xayliciouss dashboard, track orders, view order history, and earn bonus points on every order.
+        </p>
+        <div class="auth-benefits" aria-label="Account benefits">
+          <span>🎂 Faster ordering</span>
+          <span>🎁 Order history</span>
+          <span>✨ Bonus points</span>
+        </div>
+      </div>
+
+      <div class="auth-card" aria-label="Sign in and create account form">
+        <div class="auth-tabs" role="tablist" aria-label="Account options">
+          <button class="auth-tab active" id="loginTab" type="button" data-auth-tab="login" role="tab" aria-selected="true" aria-controls="loginPanel">Sign In</button>
+          <button class="auth-tab" id="registerTab" type="button" data-auth-tab="register" role="tab" aria-selected="false" aria-controls="registerPanel">Create Account</button>
+        </div>
+
+        <form class="auth-form active" id="loginForm" role="tabpanel" aria-labelledby="loginTab" novalidate>
+          <h2>Sign In</h2>
+          <p class="form-helper">Use the same phone/email used while creating your account.</p>
+
+          <div class="form-group premium-input-group">
+            <label for="loginContact">Email or Phone</label>
+            <div class="input-shell">
+              <span class="input-icon" aria-hidden="true">✉️</span>
+              <input type="text" id="loginContact" name="loginContact" placeholder="Enter email or phone" autocomplete="username" />
+            </div>
+            <small class="error-message" id="loginContactError"></small>
+          </div>
+
+          <div class="form-group premium-input-group">
+            <label for="loginPassword">Password</label>
+            <div class="input-shell">
+              <span class="input-icon" aria-hidden="true">🔐</span>
+              <input type="password" id="loginPassword" name="loginPassword" placeholder="Enter password" autocomplete="current-password" />
+            </div>
+            <small class="error-message" id="loginPasswordError"></small>
+          </div>
+
+          <button class="btn btn-primary full-btn" type="submit">Sign In</button>
+          <div class="auth-divider"><span>or</span></div>
+          <button class="google-signin-btn" id="googleSignInBtn" type="button"><span aria-hidden="true">G</span> Continue with Google</button>
+          <p class="success-message" id="loginSuccess" role="status"></p>
+        </form>
+
+        <form class="auth-form" id="registerForm" role="tabpanel" aria-labelledby="registerTab" novalidate hidden>
+          <h2>Create Account</h2>
+          <p class="form-helper">Create your Xayliciouss account to track orders, view order history, and earn bonus points.</p>
+
+          <div class="form-group premium-input-group">
+            <label for="registerName">Full Name</label>
+            <div class="input-shell">
+              <span class="input-icon" aria-hidden="true">👤</span>
+              <input type="text" id="registerName" name="registerName" placeholder="Enter your name" autocomplete="name" />
+            </div>
+            <small class="error-message" id="registerNameError"></small>
+          </div>
+
+          <div class="form-group premium-input-group">
+            <label for="registerContact">Email or Phone</label>
+            <div class="input-shell">
+              <span class="input-icon" aria-hidden="true">✉️</span>
+              <input type="text" id="registerContact" name="registerContact" placeholder="Enter email or phone" autocomplete="username" />
+            </div>
+            <small class="error-message" id="registerContactError"></small>
+          </div>
+
+          <div class="form-group premium-input-group">
+            <label for="registerPassword">Password</label>
+            <div class="input-shell">
+              <span class="input-icon" aria-hidden="true">🔐</span>
+              <input type="password" id="registerPassword" name="registerPassword" placeholder="Minimum 6 characters" autocomplete="new-password" />
+            </div>
+            <small class="error-message" id="registerPasswordError"></small>
+          </div>
+
+          <button class="btn btn-primary full-btn" type="submit">Create Account</button>
+          <p class="success-message" id="registerSuccess" role="status"></p>
+        </form>
+
+        <div class="signed-in-panel" id="signedInPanel" hidden>
+          <div class="signed-in-icon" aria-hidden="true">🍰</div>
+          <h2>You are signed in</h2>
+          <p id="signedInMessage">Welcome to Xayliciouss.</p>
+          <div class="auth-actions-row">
+            <a class="btn btn-primary" href="dashboard.html">Open Dashboard</a>
+            <a class="btn btn-secondary" href="index.html#menu">Order Now</a>
+            <button class="btn btn-secondary" id="logoutBtn" type="button">Logout</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <aside class="cart-sidebar" id="cartSidebar" aria-label="Shopping cart" aria-hidden="true">
+    <div class="cart-header">
+      <div>
+        <p class="eyebrow">Your Order</p>
+        <h2>Cart</h2>
+      </div>
+      <button class="cart-close" id="cartCloseBtn" type="button" aria-label="Close cart">×</button>
+    </div>
+
+    <div class="cart-items" id="cartItems"></div>
+
+    <div class="cart-footer">
+      <div class="cart-total-row">
+        <span>Total</span>
+        <strong id="cartTotal">₹0</strong>
+      </div>
+      <button class="btn btn-primary full-btn" id="checkoutBtn" type="button">Checkout on WhatsApp</button>
+      <p class="cart-note">Please sign in before checkout. Final price and delivery details will be confirmed on WhatsApp.</p>
+    </div>
+  </aside>
+  <div class="cart-overlay" id="cartOverlay"></div>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">↑</button>
+
+
+  <a class="floating-whatsapp" href="https://wa.me/919999999999?text=Hello%20Xayliciouss%2C%20I%20would%20like%20to%20place%20an%20order." target="_blank" rel="noopener" aria-label="Chat with Xayliciouss on WhatsApp">
+    <span class="floating-whatsapp-icon" aria-hidden="true">✆</span>
+    <span class="floating-whatsapp-text">Order on WhatsApp</span>
+  </a>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html#home" class="logo footer-logo">Xayliciouss</a>
+        <p>Premium homemade bakery for brownies, cakes, cupcakes, dessert boxes, cookies, and custom desserts.</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About Us</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h3>Connect</h3>
+        <a class="social-placeholder" href="#" data-platform="Instagram">Instagram Coming Soon</a>
+        <a href="https://wa.me/919999999999" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=xaylicioussofficial@gmail.com&su=Xayliciouss%20Customer%20Enquiry">xaylicioussofficial@gmail.com</a>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>© <span id="currentYear"></span> Xayliciouss. All rights reserved.</p></div>
+  </footer>
+
+  <script src="js/products.js" defer></script>
+  <script src="js/app.js" defer></script>
+  <script src="js/auth.js" defer></script>
+  <script src="js/chatbot.js" defer></script>
+</body>
+</html>

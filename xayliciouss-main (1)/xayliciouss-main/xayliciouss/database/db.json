@@ -1,0 +1,15 @@
+{
+  "users": [
+    {
+      "id": "USR-20260620-235001",
+      "name": "Test User",
+      "contact": "testmuczrj@example.com",
+      "provider": "Email/Phone",
+      "salt": "cdb37df7d0d2fe7232588993451ad589",
+      "passwordHash": "3f5abc80027309e2b8bc2a70c441873f6a6d73e42538b984896bb37ad55e3137",
+      "createdAt": "2026-06-20T07:56:48.002Z"
+    }
+  ],
+  "reports": [],
+  "orders": []
+}

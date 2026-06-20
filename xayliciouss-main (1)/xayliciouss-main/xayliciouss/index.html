@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Xayliciouss is a premium homemade bakery offering brownies, cakes, cupcakes, dessert boxes, cookies, and custom desserts." />
+  <title>Xayliciouss | Premium Homemade Bakery</title>
+  <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+
+  <meta name="keywords" content="Xayliciouss, premium bakery, homemade bakery, brownies, bento cakes, cupcakes, dessert boxes, cookies, custom cakes" />
+  <meta name="author" content="Xayliciouss" />
+  <meta property="og:title" content="Xayliciouss | Premium Homemade Bakery" />
+  <meta property="og:description" content="Premium homemade brownies, cakes, cupcakes, cookies, dessert boxes, and custom desserts." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/hero-dessert.jpg" />
+  <meta name="theme-color" content="#fff8ef" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Bakery",
+    "name": "Xayliciouss",
+    "description": "Premium homemade bakery offering brownies, cakes, cupcakes, cookies, dessert boxes, and custom desserts.",
+    "email": "xaylicioussofficial@gmail.com",
+    "servesCuisine": "Bakery",
+    "priceRange": "₹₹",
+    "sameAs": []
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="#home" class="logo" aria-label="Xayliciouss home">Xayliciouss</a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="customer-service.html">Customer Service</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a class="nav-signin-btn" id="navSignInBtn" href="signin.html">Sign In</a>
+        <button class="cart-btn" id="cartOpenBtn" type="button" aria-label="Open shopping cart">
+          <span aria-hidden="true">🛒</span>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="hamburger" id="hamburgerBtn" type="button" aria-label="Open mobile menu" aria-controls="navLinks" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero section reveal-section" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">Premium Homemade Bakery</p>
+        <h1>Crafted with Love, Baked to Perfection</h1>
+        <p class="hero-description">
+          Discover handcrafted brownies, bento cakes, cupcakes, dessert boxes, cookies, and celebration cakes made fresh with premium ingredients and warm homemade care.
+        </p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-primary">Order Now</a>
+          <a href="#menu" class="btn btn-secondary">View Menu</a>
+        </div>
+        <div class="trust-row" aria-label="Bakery highlights">
+          <span>✨ Freshly Baked Daily</span>
+          <span>🎁 Gift-ready Packaging</span>
+          <span>🍫 Premium Ingredients</span>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="Premium bakery highlight card">
+        <div class="hero-card">
+          <span class="premium-badge">Freshly Baked Daily</span>
+          <img src="assets/images/hero-dessert.jpg" alt="Premium chocolate celebration cake" class="hero-image" />
+          <div class="hero-card-content">
+            <p class="script-text">Xayliciouss Special</p>
+            <h2>Luxury dessert boxes for every celebration</h2>
+            <p>Brownies • Bento Cakes • Cupcakes • Cookies</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section best-sellers reveal-section" aria-labelledby="bestSellersTitle">
+      <div class="section-heading">
+        <p class="eyebrow">Customer Favorites</p>
+        <h2 id="bestSellersTitle">Best Sellers</h2>
+        <p>Our most-loved treats, freshly prepared for birthdays, gifts, parties, and sweet cravings.</p>
+      </div>
+      <div class="product-grid featured-grid" id="bestSellersGrid" aria-live="polite"></div>
+    </section>
+
+    <section class="section menu-section reveal-section" id="menu" aria-labelledby="menuTitle">
+      <div class="section-heading">
+        <p class="eyebrow">Our Menu</p>
+        <h2 id="menuTitle">Premium Bakery Menu</h2>
+        <p>Search, filter, and add your favorite Xayliciouss desserts to the cart.</p>
+      </div>
+
+      <div class="menu-tools">
+        <label class="search-label" for="productSearch">Search products</label>
+        <input type="search" id="productSearch" class="search-input" placeholder="Search brownies, cakes, cookies..." autocomplete="off" />
+
+        <div class="filter-buttons" id="categoryFilters" aria-label="Product category filters">
+          <button class="filter-btn active" type="button" data-category="All">All</button>
+          <button class="filter-btn" type="button" data-category="Brownies">Brownies</button>
+          <button class="filter-btn" type="button" data-category="Cakes">Cakes</button>
+          <button class="filter-btn" type="button" data-category="Cupcakes">Cupcakes</button>
+          <button class="filter-btn" type="button" data-category="Dessert Boxes">Dessert Boxes</button>
+          <button class="filter-btn" type="button" data-category="Cookies">Cookies</button>
+        </div>
+      </div>
+
+      <p class="empty-state" id="emptyState" hidden>No products found. Try another search or category.</p>
+      <div class="product-grid" id="productsGrid" aria-live="polite"></div>
+    </section>
+
+    <section class="section about-section reveal-section" id="about" aria-labelledby="aboutTitle">
+      <div class="about-image-card">
+        <img src="assets/images/about-dessert-box.jpg" alt="A premium Xayliciouss dessert gift box" />
+      </div>
+      <div class="about-content">
+        <p class="eyebrow">About Xayliciouss</p>
+        <h2 id="aboutTitle">Homemade warmth with a premium bakery finish</h2>
+        <p>
+          Xayliciouss is a premium homemade bakery created for people who love desserts that look beautiful, taste rich, and feel personal. Every order is prepared fresh with selected ingredients, careful decoration, and elegant packaging.
+        </p>
+        <p>
+          From customized celebration cakes to dessert gifting boxes, we focus on quality, freshness, customization, and a customer-friendly ordering experience.
+        </p>
+        <div class="about-stats" aria-label="Bakery highlights">
+          <div><strong>12+</strong><span>Signature Products</span></div>
+          <div><strong>100%</strong><span>Fresh Preparation</span></div>
+          <div><strong>5★</strong><span>Customer Love</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section why-section reveal-section" aria-labelledby="whyTitle">
+      <div class="section-heading">
+        <p class="eyebrow">Why Choose Us</p>
+        <h2 id="whyTitle">Baked beautifully for every sweet moment</h2>
+      </div>
+
+      <div class="features-grid">
+        <article class="feature-card"><span>🥐</span><h3>Freshly Baked</h3><p>Prepared fresh so every bite tastes soft, rich, and delightful.</p></article>
+        <article class="feature-card"><span>🍫</span><h3>Premium Ingredients</h3><p>Made with carefully selected ingredients for a luxury dessert experience.</p></article>
+        <article class="feature-card"><span>🎂</span><h3>Customizable Orders</h3><p>Personalized cakes, themes, flavors, messages, and dessert boxes.</p></article>
+        <article class="feature-card"><span>🎁</span><h3>Beautiful Packaging</h3><p>Elegant packaging that makes every order celebration-ready.</p></article>
+        <article class="feature-card"><span>🤎</span><h3>Homemade With Love</h3><p>Warm homemade care with professional finishing and presentation.</p></article>
+        <article class="feature-card"><span>✨</span><h3>Perfect for Celebrations</h3><p>Ideal for birthdays, anniversaries, surprises, parties, and gifting.</p></article>
+      </div>
+    </section>
+
+    <section class="section gallery-section reveal-section" id="gallery" aria-labelledby="galleryTitle">
+      <div class="section-heading">
+        <p class="eyebrow">Gallery</p>
+        <h2 id="galleryTitle">Aesthetic dessert moments</h2>
+        <p>Instagram-style highlights from our premium bakery collection.</p>
+      </div>
+      <div class="gallery-grid">
+        <figure class="gallery-item"><img src="assets/images/gallery-brownies.jpg" alt="Brownies arranged in premium packaging" /><figcaption>Brownie Love</figcaption></figure>
+        <figure class="gallery-item"><img src="assets/images/gallery-bento.jpg" alt="Minimal bento cake with elegant decoration" /><figcaption>Bento Beauty</figcaption></figure>
+        <figure class="gallery-item"><img src="assets/images/gallery-dessert-gift.jpg" alt="Dessert box prepared for gifting" /><figcaption>Gift Desserts</figcaption></figure>
+        <figure class="gallery-item"><img src="assets/images/gallery-cupcakes.jpg" alt="Cupcakes with cream frosting" /><figcaption>Cupcake Treats</figcaption></figure>
+        <figure class="gallery-item"><img src="assets/images/gallery-cookies.jpg" alt="Cookies arranged on a cream background" /><figcaption>Cookie Box</figcaption></figure>
+        <figure class="gallery-item"><img src="assets/images/gallery-celebration-cake.jpg" alt="Premium celebration cake" /><figcaption>Celebration Cakes</figcaption></figure>
+      </div>
+    </section>
+
+
+    <section class="section instagram-section reveal-section" id="instagram" aria-labelledby="instagramTitle">
+      <div class="section-heading">
+        <p class="eyebrow">Instagram Gallery</p>
+        <h2 id="instagramTitle">Fresh dessert highlights</h2>
+        <p>A clean social feed display is included. The official Instagram account can be connected after the confirmed handle is ready.</p>
+      </div>
+      <div class="instagram-feed" aria-label="Instagram style social media feed">
+        <article><img src="assets/images/gallery-brownies.jpg" alt="Brownie post preview" loading="lazy"><div><span>♡ 128</span><strong>Brownie Love</strong></div></article>
+        <article><img src="assets/images/gallery-bento.jpg" alt="Bento cake post preview" loading="lazy"><div><span>♡ 96</span><strong>Bento Cake</strong></div></article>
+        <article><img src="assets/images/gallery-cupcakes.jpg" alt="Cupcake post preview" loading="lazy"><div><span>♡ 142</span><strong>Cupcake Treats</strong></div></article>
+        <article><img src="assets/images/gallery-dessert-gift.jpg" alt="Dessert gift box post preview" loading="lazy"><div><span>♡ 173</span><strong>Gift Box</strong></div></article>
+      </div>
+    </section>
+
+    <section class="section reviews-section reveal-section" id="reviews" aria-labelledby="reviewsTitle">
+      <div class="section-heading">
+        <p class="eyebrow">Customer Reviews</p>
+        <h2 id="reviewsTitle">Loved by dessert lovers</h2>
+      </div>
+      <div class="reviews-carousel" id="reviewsCarousel" aria-label="Customer reviews carousel">
+        <button class="carousel-btn carousel-prev" type="button" data-review-control="prev" aria-label="Previous review">‹</button>
+        <div class="reviews-grid reviews-track" id="reviewsTrack">
+        <article class="review-card">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>“The brownie box was rich, fresh, and packed so beautifully. Perfect for gifting!”</p>
+          <h3>Priya Sharma</h3>
+        </article>
+        <article class="review-card">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>“Ordered a bento cake for my friend. The design was elegant and the taste was amazing.”</p>
+          <h3>Rahul Varma</h3>
+        </article>
+        <article class="review-card">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>“Xayliciouss desserts feel homemade but look premium. Loved the customization options.”</p>
+          <h3>Ananya Reddy</h3>
+        </article>
+        </div>
+        <button class="carousel-btn carousel-next" type="button" data-review-control="next" aria-label="Next review">›</button>
+      </div>
+    </section>
+
+
+    <section class="section service-section reveal-section" id="customer-service" aria-labelledby="serviceTitle">
+      <div class="section-heading">
+        <p class="eyebrow">Customer Service</p>
+        <h2 id="serviceTitle">Support for every sweet order</h2>
+        <p>Need help with an order, customization, delivery, or feedback? Xayliciouss makes customer support simple, friendly, and quick.</p>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card">
+          <span aria-hidden="true">💬</span>
+          <h3>Order Assistance</h3>
+          <p>Get help choosing products, box sizes, flavors, and quantities for your event or gifting need.</p>
+        </article>
+        <article class="service-card">
+          <span aria-hidden="true">🎂</span>
+          <h3>Custom Cake Guidance</h3>
+          <p>Share your theme, color, message, and reference idea so we can guide you with the best design.</p>
+        </article>
+        <article class="service-card">
+          <span aria-hidden="true">🚚</span>
+          <h3>Delivery Support</h3>
+          <p>Confirm delivery availability, pickup details, timing, and safe handling instructions before ordering.</p>
+        </article>
+        <article class="service-card">
+          <span aria-hidden="true">📝</span>
+          <h3>Feedback & Reports</h3>
+          <p>Send product feedback, complaints, or improvement suggestions and receive an instant response ID.</p>
+        </article>
+      </div>
+
+      <div class="service-process">
+        <h3>How our support process works</h3>
+        <ol>
+          <li><strong>Send your request:</strong> Choose a request type and write your message in the contact form.</li>
+          <li><strong>Get instant confirmation:</strong> The website shows a response with a unique report ID.</li>
+          <li><strong>Continue on WhatsApp:</strong> Use the generated WhatsApp message for faster team follow-up.</li>
+        </ol>
+      </div>
+    </section>
+
+
+    <section class="section specialty-section reveal-section" id="specialty" aria-labelledby="specialtyTitle">
+      <div class="section-heading">
+        <p class="eyebrow">Specialty Features</p>
+        <h2 id="specialtyTitle">Designed for celebrations, gifting, and cravings</h2>
+        <p>Every feature of Xayliciouss is focused on easy ordering, beautiful presentation, and a premium homemade dessert experience.</p>
+      </div>
+      <div class="specialty-grid">
+        <article class="specialty-card"><span aria-hidden="true">🎂</span><h3>Custom Cakes</h3><p>Share your theme, flavor, color, and message for personalized celebration cakes.</p></article>
+        <article class="specialty-card"><span aria-hidden="true">🎁</span><h3>Dessert Gifting</h3><p>Gift-ready brownie boxes, dessert boxes, cupcakes, and cookies with elegant packaging.</p></article>
+        <article class="specialty-card"><span aria-hidden="true">📲</span><h3>Quick WhatsApp Orders</h3><p>Add products to cart and continue order confirmation directly on WhatsApp.</p></article>
+        <article class="specialty-card"><span aria-hidden="true">⭐</span><h3>Bonus Points</h3><p>Signed-in customers can view order history, tracking, and earned bonus points in the dashboard.</p></article>
+      </div>
+    </section>
+
+    <section class="section faq-section reveal-section" id="faq" aria-labelledby="faqTitle">
+      <div class="section-heading">
+        <p class="eyebrow">FAQ</p>
+        <h2 id="faqTitle">Common Questions</h2>
+      </div>
+
+      <div class="faq-list" id="faqList">
+        <article class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            How do I place an order?<span>+</span>
+          </button>
+          <div class="faq-answer"><p>You can add products to the cart and checkout through WhatsApp. You can also contact us directly through the contact section.</p></div>
+        </article>
+        <article class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            How much notice is required for custom cakes?<span>+</span>
+          </button>
+          <div class="faq-answer"><p>Custom cakes usually need advance notice so we can confirm design, flavor, size, and availability.</p></div>
+        </article>
+        <article class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            Do you offer customized desserts?<span>+</span>
+          </button>
+          <div class="faq-answer"><p>Yes. We offer customized cakes, cupcakes, dessert boxes, messages, colors, and gifting styles.</p></div>
+        </article>
+        <article class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            Do you provide delivery?<span>+</span>
+          </button>
+          <div class="faq-answer"><p>Delivery availability depends on your location and order type. Please confirm through WhatsApp before placing the final order.</p></div>
+        </article>
+        <article class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            How can I contact Xayliciouss?<span>+</span>
+          </button>
+          <div class="faq-answer"><p>You can use the contact form, WhatsApp button, Instagram placeholder option, or official email xaylicioussofficial@gmail.com in the contact section.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact-section reveal-section" id="contact" aria-labelledby="contactTitle">
+      <div class="contact-content">
+        <p class="eyebrow">Contact Us</p>
+        <h2 id="contactTitle">Send your order request or report</h2>
+        <p>Have a custom cake idea, dessert gifting request, party order, feedback, or complaint? Send your details and receive an instant response with a report ID.</p>
+
+        <div class="contact-links">
+          <a class="contact-pill" href="https://wa.me/919999999999" target="_blank" rel="noopener">WhatsApp Xayliciouss</a>
+          <a class="contact-pill social-placeholder" href="#" data-platform="Instagram">Instagram Coming Soon</a>
+          <a class="contact-pill" href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=xaylicioussofficial@gmail.com&su=Xayliciouss%20Customer%20Enquiry" target="_blank" rel="noopener">xaylicioussofficial@gmail.com</a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="customerName">Name</label>
+          <input type="text" id="customerName" name="customerName" placeholder="Enter your name" />
+          <small class="error-message" id="nameError"></small>
+        </div>
+        <div class="form-group">
+          <label for="customerContact">Email or Phone</label>
+          <input type="text" id="customerContact" name="customerContact" placeholder="Enter email or phone number" />
+          <small class="error-message" id="contactError"></small>
+        </div>
+        <div class="form-group">
+          <label for="requestType">Request Type</label>
+          <select id="requestType" name="requestType">
+            <option value="">Choose request type</option>
+            <option value="Order Enquiry">Order Enquiry</option>
+            <option value="Custom Cake Request">Custom Cake Request</option>
+            <option value="Bulk or Party Order">Bulk or Party Order</option>
+            <option value="Delivery Support">Delivery Support</option>
+            <option value="Feedback">Feedback</option>
+            <option value="Complaint or Issue">Complaint or Issue</option>
+          </select>
+          <small class="error-message" id="requestTypeError"></small>
+        </div>
+        <div class="form-group">
+          <label for="customerMessage">Message</label>
+          <textarea id="customerMessage" name="customerMessage" rows="5" placeholder="Tell us your order request, feedback, or issue clearly"></textarea>
+          <small class="error-message" id="messageError"></small>
+        </div>
+        <button class="btn btn-primary full-btn" type="submit">Send Report</button>
+        <p class="success-message" id="formSuccess" role="status"></p>
+
+        <div class="client-response" id="clientResponse" hidden aria-live="polite">
+          <h3 id="responseTitle">Thank you for contacting Xayliciouss!</h3>
+          <p id="responseMessage"></p>
+          <div class="response-details">
+            <div>
+              <span>Report ID</span>
+              <strong id="responseReportId">-</strong>
+            </div>
+            <div>
+              <span>Expected Reply</span>
+              <strong id="responseTime">-</strong>
+            </div>
+          </div>
+          <p class="response-note">Please save your Report ID. Our team can use it to track your request.</p>
+          <div class="response-actions">
+            <a class="btn btn-primary" id="responseWhatsAppBtn" href="https://wa.me/919999999999" target="_blank" rel="noopener">Continue on WhatsApp</a>
+            <button class="btn btn-secondary" id="clearResponseBtn" type="button">Send Another Report</button>
+          </div>
+        </div>
+      </form>
+    </section>
+
+
+    <section class="section map-section reveal-section" id="location" aria-labelledby="locationTitle">
+      <div class="section-heading compact-heading">
+        <p class="eyebrow">Location & Delivery</p>
+        <h2 id="locationTitle">Find Xayliciouss support area</h2>
+        <p>A Google Maps location preview is included. The exact bakery pickup location can be updated after the official address is confirmed.</p>
+      </div>
+      <div class="map-layout">
+        <div class="map-card glass-panel">
+          <h3>Pickup location coming soon</h3>
+          <p>For now, customers can confirm delivery or pickup details through WhatsApp before placing the final order.</p>
+          <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=Xayliciouss%20Bakery" target="_blank" rel="noopener">Open Google Maps</a>
+        </div>
+        <iframe class="map-embed" title="Google Maps area preview" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Hyderabad%20bakery&output=embed"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <aside class="cart-sidebar" id="cartSidebar" aria-label="Shopping cart" aria-hidden="true">
+    <div class="cart-header">
+      <div>
+        <p class="eyebrow">Your Order</p>
+        <h2>Cart</h2>
+      </div>
+      <button class="cart-close" id="cartCloseBtn" type="button" aria-label="Close cart">×</button>
+    </div>
+
+    <div class="cart-items" id="cartItems"></div>
+
+    <div class="cart-footer">
+      <div class="cart-total-row">
+        <span>Total</span>
+        <strong id="cartTotal">₹0</strong>
+      </div>
+      <button class="btn btn-primary full-btn" id="checkoutBtn" type="button">Checkout on WhatsApp</button>
+      <p class="cart-note">Please sign in before checkout. Final price and delivery details will be confirmed on WhatsApp.</p>
+    </div>
+  </aside>
+  <div class="cart-overlay" id="cartOverlay"></div>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">↑</button>
+
+
+  <a class="floating-whatsapp" href="https://wa.me/919999999999?text=Hello%20Xayliciouss%2C%20I%20would%20like%20to%20place%20an%20order." target="_blank" rel="noopener" aria-label="Chat with Xayliciouss on WhatsApp">
+    <span class="floating-whatsapp-icon" aria-hidden="true">✆</span>
+    <span class="floating-whatsapp-text">Order on WhatsApp</span>
+  </a>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html#home" class="logo footer-logo">Xayliciouss</a>
+        <p>Premium homemade bakery for brownies, cakes, cupcakes, dessert boxes, cookies, and custom desserts.</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About Us</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h3>Connect</h3>
+        <a class="social-placeholder" href="#" data-platform="Instagram">Instagram Coming Soon</a>
+        <a href="https://wa.me/919999999999" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=xaylicioussofficial@gmail.com&su=Xayliciouss%20Customer%20Enquiry">xaylicioussofficial@gmail.com</a>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>© <span id="currentYear"></span> Xayliciouss. All rights reserved.</p></div>
+  </footer>
+
+  <script src="js/products.js" defer></script>
+  <script src="js/app.js" defer></script>
+  <script src="js/chatbot.js" defer></script>
+</body>
+</html>
