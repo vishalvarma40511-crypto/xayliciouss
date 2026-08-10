@@ -6,7 +6,6 @@ A modern and responsive bakery website built to showcase delicious cakes, pastri
 
 **Website:** https://xayliciouss-meil.onrender.com/ 
 
-**Demo Video**  https://drive.google.com/file/d/1YCObLU49Vg4DM07dpOelXDMfF3BFvfek/view?usp=sharing
 
 # 📌 Project Overview
 
@@ -194,6 +193,7 @@ https://drive.google.com/file/d/1YCObLU49Vg4DM07dpOelXDMfF3BFvfek/view?usp=shari
 # 📊 Presentation (PPT)
 
 Add your presentation link here.
+none
 
 
 ---
